@@ -32,7 +32,7 @@ if [ "$USER" = "root" ]; then
     color="red"         # root is red, user is green
 fi;
 #prompt="%{$fg[$color]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%} %T %B%~%b "
-prompt="%{$fg[$color]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%} %B%~%b "
+prompt="%{$fg[$color]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%} %B% >%b "
 RPROMPT='${vim_mode} ${vcs_info_msg_0_}'
 RPROMPT_COMMAND='${USER}@${HOSTNAME}'
 
